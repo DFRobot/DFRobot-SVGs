@@ -13,11 +13,11 @@
    height="1052.3622047"
    id="svg15364"
    version="1.1"
-   inkscape:version="0.48.1 "
+   inkscape:version="0.48.4 r9939"
    sodipodi:docname="DFR0052.svg"
-   inkscape:export-filename="C:\Users\静\Desktop\中级套件连线图\项目 7\DFR0052.png"
-   inkscape:export-xdpi="900"
-   inkscape:export-ydpi="900">
+   inkscape:export-filename="C:\Users\LeffWei\Desktop\bitmap.png"
+   inkscape:export-xdpi="200"
+   inkscape:export-ydpi="200">
   <defs
      id="defs15366" />
   <sodipodi:namedview
@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="141.68664"
-     inkscape:cy="643.22494"
+     inkscape:zoom="1.979899"
+     inkscape:cx="380.54753"
+     inkscape:cy="711.77152"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -944,5 +944,41 @@
          style="color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
          sodipodi:type="arc" />
     </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:7.00000003%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="420.22348"
+       y="361.8313"
+       id="text3101"
+       sodipodi:linespacing="7%"><tspan
+         sodipodi:role="line"
+         id="tspan3103"
+         x="420.22348"
+         y="361.8313"
+         style="font-size:12px;line-height:7.00000003%">NC(empty)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="420.49887"
+       y="350.50183"
+       id="text3105"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3107"
+         x="420.49887"
+         y="350.50183"
+         style="font-size:12px">GND</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="421.15512"
+       y="373.01428"
+       id="text3109"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3111"
+         x="421.15512"
+         y="373.01428"
+         style="font-size:12px">Analog</tspan></text>
   </g>
 </svg>

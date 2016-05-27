@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="297.000mm" height="210.000mm" viewBox="0.000000 0.000000 297.000000 210.000000" stroke-linejoin="round" stroke-linecap="round" fill="none" fill-rule="evenodd"><desc>3DVIA Composer Export</desc><script type="text/ecmascript"><![CDATA[
+if(typeof(top) != "undefined")
+{
+	top.ShowPaper = ShowPaper;
+}
+function ShowHotSpot(evt,hotspotid)
+{
+	var svgDocument = evt.target.ownerDocument;
+	var strId = "hotspot."+hotspotid;
+	var hotspot = svgDocument.getElementById(strId);
+	if(hotspot)
+		hotspot.setAttribute("opacity",".5");
+}
+function HideHotSpot(evt,hotspotid)
+{
+	var svgDocument = evt.target.ownerDocument;
+	var strId = "hotspot."+hotspotid;
+	var hotspot = svgDocument.getElementById(strId);
+	if(hotspot)
+		hotspot.setAttribute("opacity","0");
+
+	var toolTip = svgDocument.getElementById('ToolTip');
+	if(toolTip)
+		toolTip.setAttribute("visibility","hidden");
+}
+function ShowToolTip(evt,hotspotid,strTooltip)
+{
+	if(strTooltip=="")
+	return;
+
+	// change text
+	var svgDocument = evt.target.ownerDocument;
+	var tiptext = svgDocument.getElementById('ToolTipText');
+	if( !tiptext )
+	return;
+	tiptext.firstChild.nodeValue = " " + strTooltip + "  " ;
+
+	// show tooltip before, else some refresh issue
+
+	var toolTip = svgDocument.getElementById('ToolTip');
+	if(!toolTip)
+	return;
+
+	toolTip.setAttribute("visibility","visible");
+	toolTip.setAttribute("opacity",".95");
+
+	// move tooltip
+	// get viewbox
+
+	var root = svgDocument.documentElement;
+	var vbox = (root.getAttribute("viewBox")).split(' ');
+	var x0 = parseFloat(vbox[0]);
+	var y0 = parseFloat(vbox[1]);
+	var vboxW = parseFloat(vbox[2]);
+	var vboxH = parseFloat(vbox[3]);
+
+	// get default width of svg
+
+	var strW = root.getAttribute("width");
+	var svgW = parseFloat(strW);
+	if(strW.indexOf('mm') != -1)
+	svgW *= 3.779;
+
+	var strH = root.getAttribute("height");
+	var svgH = parseFloat(strH);
+	if(strH.indexOf('mm') != -1)
+	svgH *= 3.779;  	// 96 dpi  -> 96/25.4 = 3.779
+
+	// update the viewbox / width / height if svg is embedded in html with zoom fit all
+	var realx0 = x0;
+	var realy0 = y0;
+	var realvboxW = vboxW;
+	var realvboxH = vboxH;
+	var realsvgW = svgW;
+	var realsvgH = svgH;
+
+	if ((typeof(top) == "undefined") || (typeof(top.svgctl1) != "undefined")) // embedded in html
+	{
+		// get window size in pxl
+
+		svgW = window.innerWidth;
+		svgH = window.innerHeight;
+
+		// calculate real viewbox
+
+		realsvgW = svgW;
+		realsvgH = svgH;
+		if((svgW / svgH) > (vboxW / vboxH))
+		{
+			realvboxW = (vboxH * svgW) / svgH;
+			realvboxH = vboxH;
+			realx0 = x0 - (realvboxW - vboxW)/2 ;
+		}
+		else
+		{
+			realvboxH = (vboxW * svgH) / svgW;
+			realvboxW = vboxW;
+			realy0 = y0 - (realvboxH - vboxH)/2 ;
+		}
+	}
+
+	// get user zoom/pan
+
+	var newScale = root.currentScale;
+	var translation = root.currentTranslate;
+
+	// transform pxl to user unit
+
+	var xPos = (((evt.clientX+10- translation.x)/newScale) * realvboxW)/realsvgW  + realx0 ;
+	var yPos = (((evt.clientY+5- translation.y)/newScale) * realvboxH)/ realsvgH  + realy0 ;
+	var scaleForWidth = ( (1 / newScale) * realvboxH) / realsvgH;
+
+	// move tooltip
+
+	toolTip.setAttribute("transform", "translate(" + xPos + "," + yPos + ")" );
+
+	// resize tooltip
+
+	var fontsize = 12;
+	tiptext.setAttribute("font-size",fontsize*scaleForWidth);
+	tiptext.setAttribute("y", fontsize*scaleForWidth);
+	var tipBG = svgDocument.getElementById('ToolTipBG');
+	var outline = tiptext.getBBox();
+	if(tipBG)
+	{
+		tipBG.setAttribute("stroke-width", 1*scaleForWidth);
+		tipBG.setAttribute("width", Number(outline.width) );
+		tipBG.setAttribute("height", Number(outline.height) + fontsize*.5*scaleForWidth );
+	}
+	var ToolTipShadow = svgDocument.getElementById('ToolTipShadow');
+	if(ToolTipShadow)
+	{
+		ToolTipShadow.setAttribute("width", Number(outline.width) );
+		ToolTipShadow.setAttribute("height", Number(outline.height) + fontsize*.5*scaleForWidth );
+		ToolTipShadow.setAttribute("x", 3*scaleForWidth);
+		ToolTipShadow.setAttribute("y", 3*scaleForWidth);
+	}
+}
+function ShowPaper()
+{
+  var svgDocument = getDocument();
+  var paper = svgDocument.getElementById("paperID");
+  if(paper)
+  {
+    paper.setAttribute("transform","scale(1)");
+    paper.setAttribute("opacity","1");
+    paper.setAttribute("visibility","visible");
+  }
+  var svg = svgDocument.getRootElement();
+  if(svg)
+  {
+    svg.setAttribute("width","307.000mm");
+    svg.setAttribute("height","220.000mm");
+    svg.setAttribute("viewBox","-5.000000 -5.000000 307.000000 220.000000");
+  }
+}
+]]></script><defs/><g><path style="fill:#dcdcdc;fill-rule:evenodd" d="M246.70,83.58L247.73,84.34L247.71,84.64L247.39,84.86L246.64,84.92L245.96,84.08L244.97,83.57L243.87,83.35L245.44,83.07zM56.32,85.15L54.74,86.06L54.00,88.07L54.33,89.32L55.11,90.30L54.33,90.32L53.61,89.79L53.09,88.82L53.08,86.63L54.00,85.31L54.99,84.82L57.09,84.82zM188.30,96.01L189.05,97.02L188.57,97.02L187.80,96.26L186.82,95.75L185.46,95.52L187.31,95.50zM111.49,98.31L112.41,96.75L113.90,96.01L115.25,96.02L114.40,96.26L112.88,96.98L111.91,98.48L112.08,100.90L111.76,100.73L111.49,100.00zM112.54,101.25L112.52,101.55L112.27,101.52L112.08,100.90zM248.25,108.20L248.20,108.50L247.21,108.70L246.70,107.93L245.36,107.19L246.71,107.18zM55.85,108.64L55.00,109.18L54.08,110.50L54.08,112.93L55.12,114.15L54.10,114.14L53.12,113.14L52.84,112.43L52.84,110.74L53.75,109.17L55.66,108.45z"/><g id="Actor_.0"><g style="stroke:#000000;stroke-width:0.353"><path d="M55.49,114.64L54.53,114.40L53.66,113.84L53.05,113.04L52.72,112.08L52.73,111.06L53.07,110.10L53.70,109.29L54.55,108.73L55.54,108.47"/><path d="M54.70,90.53L53.86,89.98L53.25,89.19L52.93,88.24L52.93,87.23L53.27,86.27L53.90,85.47L54.53,85.05L54.75,84.91L55.73,84.65L56.74,84.73"/><path d="M116.27,96.46L115.31,96.05L114.26,95.97L113.25,96.24L112.37,96.82L111.72,97.65L111.38,98.64L111.39,99.69L111.42,99.78L111.73,100.68L112.37,101.50L113.25,102.07"/><path d="M185.06,95.67L186.07,95.40L187.12,95.48L188.09,95.89L188.88,96.60L189.39,97.52L189.58,98.55L189.42,99.59L188.93,100.52L188.17,101.24L187.21,101.66"/><path d="M246.03,89.14L246.95,88.72L247.69,88.03L248.15,87.13L248.30,86.13L248.10,85.13L247.60,84.24L246.83,83.56L245.88,83.16L244.86,83.08L243.88,83.34"/><path d="M245.57,113.22L246.59,113.13L247.52,112.71L248.26,112.01L248.73,111.10L248.87,110.09L248.68,109.09L248.17,108.19L247.40,107.50L246.45,107.10L245.42,107.02"/></g><g style="stroke:#000000;stroke-width:0.705"><path d="M45.14,117.18L44.98,116.86L44.79,115.62L45.10,83.84L45.31,82.62L45.88,81.51L46.77,80.63L47.91,80.06L49.10,79.86L252.00,78.15L253.25,78.33L254.39,78.90L255.29,79.76L255.88,80.86L256.11,82.09L256.92,114.05L256.75,115.29L256.21,116.42L255.34,117.31L254.23,117.89L252.99,118.10L48.74,119.59L47.51,119.40L46.41,118.85L45.53,117.97L45.14,117.18"/><path d="M56.27,114.57L55.63,114.41L54.79,113.86L54.18,113.07L53.86,112.12L53.87,111.12L54.21,110.16L54.83,109.37L55.69,108.81L56.60,108.57"/><path d="M57.52,85.06L56.85,85.01L55.86,85.26L55.02,85.82L54.40,86.61L54.07,87.56L54.06,88.55L54.38,89.50L54.98,90.28L55.73,90.76"/><path d="M55.49,114.64L56.51,114.54L57.44,114.13L58.19,113.43L58.68,112.54L58.86,111.53L58.70,110.52L58.22,109.63L57.48,108.95L56.55,108.55L55.54,108.47"/><path d="M54.70,90.53L55.69,90.77L56.69,90.68L57.62,90.26L58.37,89.57L58.86,88.68L59.03,87.68L58.87,86.69L58.43,85.86L57.66,85.13L56.74,84.73"/><path d="M113.56,102.14L112.82,101.67L112.18,100.85L111.84,99.88L111.84,98.84L112.17,97.86L112.81,97.04L113.68,96.46L114.68,96.20L115.71,96.28L116.38,96.56"/><path d="M116.27,96.46L117.04,97.17L117.54,98.08L117.72,99.12L117.55,100.15L117.05,101.08L116.28,101.80L115.32,102.22L114.27,102.32L113.25,102.07"/><path d="M187.21,101.66L186.16,101.76L185.13,101.51L184.24,100.94L183.59,100.12L183.23,99.13L183.22,98.08L183.55,97.08L184.18,96.25L185.06,95.67"/><path d="M187.12,101.67L187.73,101.40L188.48,100.69L188.96,99.78L189.12,98.75L188.94,97.73L188.43,96.82L187.65,96.12L186.69,95.71L185.65,95.64L184.74,95.88"/><path d="M243.88,83.34L243.04,83.90L242.43,84.71L242.12,85.67L242.14,86.68L242.50,87.64L243.14,88.44L244.01,88.99L245.01,89.23L246.03,89.14"/><path d="M245.42,107.02L244.44,107.28L243.59,107.85L242.98,108.66L242.67,109.63L242.69,110.65L243.05,111.62L243.70,112.42L244.57,112.97L245.57,113.22"/><path d="M245.49,89.18L245.82,89.03L246.55,88.35L247.01,87.46L247.15,86.47L246.96,85.48L246.46,84.60L245.70,83.93L244.76,83.54L243.76,83.46L243.66,83.49"/><path d="M244.88,107.17L245.32,107.20L246.26,107.60L247.02,108.28L247.53,109.16L247.72,110.16L247.57,111.16L247.11,112.05L246.38,112.74L245.46,113.15L245.35,113.17"/></g></g><g/><g id="paperID" visibility="hidden" opacity="0.00" transform="scale(0.000100)"><path style="stroke:#000000;stroke-width:0.500;fill:#e6e6e6;fill-rule:evenodd" d="M-2000.00,-2000.00L2297.00,-2000.00L2297.00,2210.00L-2000.00,2210.00zM0.00,0.00L297.00,0.00L297.00,210.00L0.00,210.00z"/><path style="fill:#000000;fill-opacity:0.118" d="M3.00,210.00L297.00,210.00L297.00,3.00L300.00,3.00L300.00,213.00L3.00,213.00z"/></g><g id="ToolTip" visibility="hidden" opacity="0" transform="translate(0,0)"><rect id="ToolTipShadow" opacity="0.20" fill="black" stroke="none" x="0" y="0" width="30" height="8"/><rect id="ToolTipBG" fill="#ffffe1" stroke="black" x="0" y="0" width="30" height="8"/><text xml:space="preserve" id="ToolTipText" fill="black" x="0" y="0" width="30" height="8">tooltip</text></g></g></svg>

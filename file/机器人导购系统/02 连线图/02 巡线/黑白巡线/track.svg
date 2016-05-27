@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg20256"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   inkscape:export-filename="D:\01 -Work\08 - 移动机器人导购系统\连线图\02 巡线\黑白巡线\track.png"
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400"
+   sodipodi:docname="新建文档 162">
+  <defs
+     id="defs20258">
+    <path
+       transform="matrix(-0.42516085,0.00347223,-0.00347223,-0.42516085,-100.07191,1196.2393)"
+       sodipodi:open="true"
+       sodipodi:end="7.8188447"
+       sodipodi:start="1.5364461"
+       d="m -72.401151,844.26615 a 7.7655478,7.7655478 0 1 1 0.0061,-2.1e-4"
+       sodipodi:ry="7.7655478"
+       sodipodi:rx="7.7655478"
+       sodipodi:cy="836.50519"
+       sodipodi:cx="-72.667847"
+       id="path7983-8-81"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.46463159;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       transform="matrix(-0.42516085,0.00347223,-0.00347223,-0.42516085,-100.07191,1196.2393)"
+       sodipodi:open="true"
+       sodipodi:end="7.8188447"
+       sodipodi:start="1.5364461"
+       d="m -72.401151,844.26615 a 7.7655478,7.7655478 0 1 1 0.0061,-2.1e-4"
+       sodipodi:ry="7.7655478"
+       sodipodi:rx="7.7655478"
+       sodipodi:cy="836.50519"
+       sodipodi:cx="-72.667847"
+       id="path7983-8-8-7"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.46463159;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+    <path
+       transform="matrix(-0.42516085,0.00347223,-0.00347223,-0.42516085,-100.07191,1196.2393)"
+       sodipodi:open="true"
+       sodipodi:end="7.8188447"
+       sodipodi:start="1.5364461"
+       d="m -72.401151,844.26615 a 7.7655478,7.7655478 0 1 1 0.0061,-2.1e-4"
+       sodipodi:ry="7.7655478"
+       sodipodi:rx="7.7655478"
+       sodipodi:cy="836.50519"
+       sodipodi:cx="-72.667847"
+       id="path7983-8-8-4-0"
+       style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:0.46463159;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       sodipodi:type="arc" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="559.06661"
+     inkscape:cy="674.07771"
+     inkscape:document-units="px"
+     inkscape:current-layer="g19902"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata20261">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(0.20713789,0.3421602,-0.3421602,0.20713789,311.70129,-55.099537)"
+       id="g19902">
+      <rect
+         transform="matrix(0.51787756,-0.85545475,0.85545475,0.51787756,0,0)"
+         y="478.15756"
+         x="-579.54083"
+         height="1282.9874"
+         width="1327.9468"
+         id="rect10550"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:4.42941475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <path
+         sodipodi:nodetypes="csscsc"
+         transform="matrix(1.294776,-2.1387725,2.1387725,1.294776,-905.09424,520.58649)"
+         inkscape:connector-curvature="0"
+         id="path11393"
+         d="M 294.28572,715.21933 C 323.48723,647.22447 190.05346,653.02166 235.32749,554.42381 257.34031,506.48425 372.14886,419.84736 446.32243,442.97524 488.74597,456.20322 629.0676,510.93807 551.42857,633.79076 543.86805,657.23075 489.95638,696.52907 520.52056,736.299 687.57632,953.67092 185.67626,875.51271 294.28572,715.21933 z"
+         style="fill:none;stroke:#000000;stroke-width:10.62992096;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.1 "
+   sodipodi:docname="for语句.svg"
+   inkscape:export-filename="C:\Users\静\Desktop\元件图片\PIC\for语句.png"
+   inkscape:export-xdpi="800"
+   inkscape:export-ydpi="800">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="211.26495"
+     inkscape:cy="649.23269"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="150.26019"
+       y="403.08664"
+       id="text2985"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2987"
+         x="150.26019"
+         y="403.08664"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Segoe Script;-inkscape-font-specification:Segoe Script">for <tspan
+   style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'迷你简卡通';-inkscape-font-specification:'迷你简卡通'"
+   id="tspan3017">( 循环初始化；循环条件；循环调整语句) {</tspan></tspan><tspan
+         sodipodi:role="line"
+         x="150.26019"
+         y="413.58252"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'迷你简卡通';-inkscape-font-specification:'迷你简卡通'"
+         id="tspan3009">     循环体语句；</tspan><tspan
+         sodipodi:role="line"
+         x="150.26019"
+         y="423.58252"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'迷你简卡通';-inkscape-font-specification:'迷你简卡通'"
+         id="tspan3011">}</tspan></text>
+    <path
+       style="fill:#ff0000;stroke:#ff0000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 179.10714,390.93361 c 0.67744,1.05972 0.23797,2.37971 0.35715,3.57143"
+       id="path3196"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 180.68179,389.84145 c -14.56701,2.63297 7.92475,11.91798 0,0 z"
+       id="path3209"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 222.76435,391.28431 c 5.72102,-2.06779 -0.36706,3.42012 0.25254,3.03046 1.13891,0.0924 1.86992,-0.15583 3.03045,-0.25254"
+       id="path4089"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 226.85371,391.19436 c -5.06206,-6.92409 -10.27438,8.34257 -0.076,3.52288 1.20027,-0.56725 0.62207,-3.1792 0.076,-3.52288 z"
+       id="path4124"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 153.90071,407.44641 c 1.51147,-0.43447 2.53034,0.35437 0.2801,1.58631 1.48657,0.35504 1.53302,1.88895 -1.02704,1.77922"
+       id="path4412"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 157.13468,407.96761 c -3.48808,-5.48381 -6.50192,-0.36637 -6.0685,1.32906 2.11467,6.6742 7.78558,1.17172 6.0685,-1.32906 z"
+       id="path4480"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 270.31714,391.15571 c -5.06206,-6.92409 -11.56017,9.24469 -0.32154,2.95368 0.79983,-0.44771 0.46897,-2.41962 0.32154,-2.95368 z"
+       id="path4124-5"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 267.83196,391.02952 c -0.69311,-0.27194 -2.06198,1.25056 -2.93958,1.82932 1.17135,0.34853 2.4627,0.14734 3.69337,0.22097"
+       id="path4861"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 267.7889,391.04484 c -0.44708,1.00992 -0.64014,2.27363 -0.91545,3.25143"
+       id="path4885"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="233.92857"
+       y="392.71933"
+       id="text5033"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan5035"
+         x="233.92857"
+         y="392.71933"
+         style="font-size:6px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;fill:#ff6600;font-family:'迷你简卡通';-inkscape-font-specification:'迷你简卡通'">条件为真</tspan></text>
+    <path
+       style="fill:none;stroke:#f7760c;stroke-width:0.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 252.98341,394.644 c 11.49599,24.65424 -42.82524,15.8674 -48.3585,16.25"
+       id="path5049"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#f7760c;stroke-width:0.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 205.00324,410.62131 c 1.83858,-0.78301 3.84478,-1.13952 5.77681,-1.60993"
+       id="path5128"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#f7760c;stroke-width:0.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 204.76696,410.95547 c 1.96562,0.64246 4.3554,2.08107 5.83995,2.90418"
+       id="path5141"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

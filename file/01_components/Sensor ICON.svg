@@ -20,10 +20,10 @@
    enable-background="new 0 0 841.89 595.28"
    xml:space="preserve"
    inkscape:version="0.48.1 "
-   sodipodi:docname="4.23.svg"
-   inkscape:export-filename="F:\20-Files send to me\12-wenwen\4.23.png"
-   inkscape:export-xdpi="90"
-   inkscape:export-ydpi="90"><metadata
+   sodipodi:docname="Sensor ICON.svg"
+   inkscape:export-filename="C:\Users\静\Desktop\icon.png"
+   inkscape:export-xdpi="400"
+   inkscape:export-ydpi="400"><metadata
    id="metadata3537"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
          rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
@@ -40,15 +40,15 @@
    guidetolerance="10"
    inkscape:pageopacity="0"
    inkscape:pageshadow="2"
-   inkscape:window-width="1680"
-   inkscape:window-height="987"
+   inkscape:window-width="1920"
+   inkscape:window-height="1017"
    id="namedview3533"
    showgrid="false"
    inkscape:zoom="1.0482462"
    inkscape:cx="337.49638"
    inkscape:cy="299.46812"
-   inkscape:window-x="-32000"
-   inkscape:window-y="-32000"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
    inkscape:window-maximized="1"
    inkscape:current-layer="图层_1" />
 <g
@@ -725,22 +725,22 @@
      d="m 721.49902,290.5 c 0,1.65685 -6.08132,3 -13.583,3 -7.50169,0 -13.583,-1.34315 -13.583,-3 0,-1.65685 6.08131,-3 13.583,-3 7.50168,0 13.583,1.34315 13.583,3 z" /></g>
 <g
    id="g3515"
-   transform="matrix(2.3782719,0,0,2.3782719,-1255.537,-328.1588)">
+   transform="matrix(2.3782719,0,0,2.3782719,-1626.633,-299.53957)">
 	<path
    d="m 777.368,270.685 h -5.164 c -0.46,-5.152 -4.796,-9.207 -10.065,-9.207 -5.269,0 -9.605,4.055 -10.064,9.207 h -5.165 v 1.589 h 5.154 c 0.354,5.256 4.731,9.426 10.075,9.426 5.344,0 9.722,-4.17 10.076,-9.426 h 5.153 v -1.589 z m -15.229,-6.207 c 3.614,0 6.601,2.712 7.047,6.207 h -1.721 v -1.848 h -10.652 v 1.848 h -1.72 c 0.446,-3.495 3.431,-6.207 7.046,-6.207 z m 0,14.223 c -3.689,0 -6.729,-2.825 -7.075,-6.426 h 1.749 v 2.421 h 10.652 v -2.421 h 1.75 c -0.346,3.6 -3.387,6.426 -7.076,6.426 z"
    id="path3517"
    inkscape:connector-curvature="0"
    style="fill:#231815" />
 	<polygon
-   points="750.717,262.458 750.095,262.858 751.232,263.443 752.369,264.03 752.308,262.751 752.247,261.473 751.612,261.881 748.055,256.242 747.153,256.809 "
+   points="750.095,262.858 751.232,263.443 752.369,264.03 752.308,262.751 752.247,261.473 751.612,261.881 748.055,256.242 747.153,256.809 750.717,262.458 "
    id="polygon3519"
    style="fill:#231815" />
 	<polygon
-   points="756.895,258.869 756.272,259.268 757.41,259.854 758.547,260.44 758.485,259.163 758.425,257.884 757.79,258.292 754.232,252.652 753.331,253.22 "
+   points="756.272,259.268 757.41,259.854 758.547,260.44 758.485,259.163 758.425,257.884 757.79,258.292 754.232,252.652 753.331,253.22 756.895,258.869 "
    id="polygon3521"
    style="fill:#231815" />
 	<polygon
-   points="753.912,260.746 753.29,261.145 754.428,261.73 755.565,262.317 755.504,261.039 755.443,259.76 754.809,260.168 751.25,254.529 750.349,255.096 "
+   points="753.29,261.145 754.428,261.73 755.565,262.317 755.504,261.039 755.443,259.76 754.809,260.168 751.25,254.529 750.349,255.096 753.912,260.746 "
    id="polygon3523"
    style="fill:#231815" />
 </g>
